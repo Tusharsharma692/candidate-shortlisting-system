@@ -17,7 +17,7 @@ function MatchForm() {
     try {
 
       const response = await axios.post(
-        "http://localhost:5000/api/match",
+        "https://candidate-shortlisting-system-jnq7.onrender.com/api/match",
         {
           requiredSkills: skills
             .split(",")

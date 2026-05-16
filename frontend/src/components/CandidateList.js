@@ -39,7 +39,7 @@ function CandidateList() {
     try {
 
       const response = await axios.get(
-        "http://localhost:5000/api/candidates"
+        "https://candidate-shortlisting-system-jnq7.onrender.com/api/candidates"
       );
 
       setCandidates(response.data);
@@ -60,7 +60,7 @@ function CandidateList() {
     try {
 
       await axios.delete(
-        `http://localhost:5000/api/candidates/${id}`
+        `https://candidate-shortlisting-system-jnq7.onrender.com/api/candidates/${id}`
       );
 
       fetchCandidates();
@@ -97,7 +97,7 @@ function CandidateList() {
     try {
 
       await axios.put(
-        `http://localhost:5000/api/candidates/${id}`,
+        `https://candidate-shortlisting-system-jnq7.onrender.com/api/candidates/${id}`,
         editData
       );
 
